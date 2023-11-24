@@ -526,20 +526,11 @@
 
 
       let a, b,c,d,e,f,g,h
-      function fetchData() {
-       
-
-        a =  Math.floor(Math.random() * (90 - 75 + 1)) + 75;
-        e =  Math.floor(Math.random() * (90 - 75 + 1)) + 75;
-            heart_1.innerText = a
-            heart_2.innerText = e
-      }
 
       function loaddata(){
 
         
-        a =  Math.floor(Math.random() * (90 - 75 + 1)) + 75;
-        e =  Math.floor(Math.random() * (90 - 75 + 1)) + 75;
+
             
            
         b =  Math.floor(Math.random() * (98 - 95 + 1)) + 95;
@@ -549,18 +540,18 @@
         d =   Math.floor(Math.random() * (25 - 23 + 1)) + 23;
         h =   Math.floor(Math.random() * (25 - 23 + 1)) + 23;
 
-            heart_1.innerText = a
+          
            spo2_1.innerText = b
             body_temp_1.innerText = c
             Environment_temp_1.innerText = d
             
-            heart_2.innerText = e
+           
            spo2_2.innerText = f
             body_temp_2.innerText = g
             Environment_temp_2.innerText = h
       }
       setInterval(loaddata,2000)
-      setInterval(fetchData, 800);
+      
 
 
 
@@ -652,14 +643,19 @@
         // Giả định: Giá trị mới được thêm vào biểu đồ sau mỗi khoảng thời gian (ví dụ: 1 giây)
         setInterval(() => {
             
-            const newValue =  Math.floor(Math.random() * (90 - 75 + 1)) + 75;
-          
-               
-            const newValue_2 = Math.floor(Math.random() * (85 - 70 + 1)) + 70;
-            // Thêm giá trị mới và cập nhật biểu đồ
-            addData(newValue);
-            addData_2(newValue_2);
-        }, 800); // Cập nhật giá trị mỗi giây
+
+
+            a =  Math.floor(Math.random() * (85 - 75 + 1)) + 75;
+            e =  Math.floor(Math.random() * (90 - 75 + 1)) + 75;
+            heart_1.innerText = a
+            heart_2.innerText = e
+            addData(a);
+            addData_2(e);
+
+
+
+
+        }, 700); // Cập nhật giá trị mỗi giây
 
 
     
